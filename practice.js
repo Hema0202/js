@@ -97,25 +97,46 @@
 // console.log(Number.MAX_SAFE_INTEGER);
 // 9007199254740991
 
-let arr = [1, 3, 4, 5, 6, 6, 7, 4, 5, 3, 2, 2, 1, 2, 4, 5, 6, 8, 7, 8];
-// return boolean isDivisible by 11
-function isDivisibleBy11(arr) {
-  let oddSum = 0;
-  let evenSum = 0;
-  let diff = 0;
-  let n = arr.length - 1;
-  if (n % 2 != 0) n--;
-  for (let i = n; i >= 0; i -= 2) {
-    console.log(arr[i]);
-  }
-  for (i = 0; i <= arr.length; i += 2) {
-    oddSum += arr[i];
-  }
-  for (i = arr.length - 1; i >= 0; i - 1) {
-    evenSum += arr[i];
-  }
-  diff = evenSum - oddSum;
+// let arr = [1,3,4,3,1];
+// // return boolean isDivisible by 11
+// function isDivisibleBy11(arr) {
+//   let oddSum = 0;
+//   let evenSum = 0;
+//   let diff = 0;
+  
+//   for (let i = 1; i <arr.length; i += 2) {
+//     oddSum += arr[i];
+//   }
+//   for (let i = 0; i < arr.length; i+=2) {
+//     evenSum += arr[i];
+//   }
+//   diff = evenSum - oddSum;
+// if(diff%11==0)
+// console.log("the number is divisble by 11")
+// else
+// console.log("the number is not divisble by 11")
+// }
+// isDivisibleBy11(arr);
 
-  return diff;
+
+// let s= "Hema lohana";
+// let arr= s.split(" ");
+// let res ="";
+// for(let i=0;i<arr.length;i++){
+//    res += `${arr[i].charAt(0).toUpperCase()}. `
+// }
+// console.log(res);
+
+let s="Hema Lohana";
+// 
+// let res="";
+// res=`${arr[0].charAt(0).toUpperCase()}. ${arr[1].charAt(0).toUpperCase()}. ${arr[2]}`;
+// console.log(res);
+
+let res="";
+let arr=s.split(" ");
+for(let i=0;i<arr.length;i++){
+    res+=`${arr[i].charAt(0).toUpperCase()}. `
 }
-console.log(isDivisibleBy11(arr));
+
+console.log(res);
