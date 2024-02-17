@@ -103,7 +103,7 @@
 //   let oddSum = 0;
 //   let evenSum = 0;
 //   let diff = 0;
-  
+
 //   for (let i = 1; i <arr.length; i += 2) {
 //     oddSum += arr[i];
 //   }
@@ -118,7 +118,6 @@
 // }
 // isDivisibleBy11(arr);
 
-
 // let s= "Hema lohana";
 // let arr= s.split(" ");
 // let res ="";
@@ -127,16 +126,40 @@
 // }
 // console.log(res);
 
-let s="Hema Lohana";
-// 
+let s = "Hema Lohana";
+//
 // let res="";
 // res=`${arr[0].charAt(0).toUpperCase()}. ${arr[1].charAt(0).toUpperCase()}. ${arr[2]}`;
 // console.log(res);
 
-let res="";
-let arr=s.split(" ");
-for(let i=0;i<arr.length;i++){
-    res+=`${arr[i].charAt(0).toUpperCase()}. `
-}
+// let res = "";
+// let arr = s.split(" ");
+// for (let i = 0; i < arr.length; i++) {
+//   res += `${arr[i].charAt(0).toUpperCase()}. `;
+// }
 
-console.log(res);
+// console.log(res);
+
+
+let arr = [1, 3, 4, 5, 6, 6, 7, 4, 5, 3, 2, 2, 1, 2, 4, 5, 6, 8, 7, 8];
+// return boolean isDivisible by 11
+function isDivisibleBy11(arr) {
+  let oddSum = 0;
+  let evenSum = 0;
+  let diff = 0;
+  let n = arr.length - 1;
+  if (n % 2 != 0) n--;
+  for (let i = n; i >= 0; i -= 2) {
+    console.log(arr[i]);
+  }
+  for (i = 0; i <= arr.length; i += 2) {
+    oddSum += arr[i];
+  }
+  for (i = arr.length - 1; i >= 0; i - 1) {
+    evenSum += arr[i];
+  }
+  diff = evenSum - oddSum;
+
+  return diff;
+}
+console.log(isDivisibleBy11(arr));
