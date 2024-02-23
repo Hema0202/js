@@ -91,3 +91,25 @@ for(let i=0;i<arr.length;i++){
     
 }
 }
+
+// ########################################  New que  ##########################################
+
+// find prime number less then given number
+
+function lesserPrimeNo(n){
+function isPrime(number) {
+    if (number < 2) {
+      return false;
+    }
+   for (let i = 2; i <= number / 2; i++) {
+      if (number % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(isPrime(6));
+  if(number==true || number==false){
+              
+  }
+}
