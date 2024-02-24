@@ -65,16 +65,13 @@
 //             }
 //         }
 //         return upperCaseCount;
-        
+
 //     }
 // }
-
 
 // ########################################  New que  ##########################################
 
 // Given the menu of the two restaurants. There may be a chance of fight between them if any one of them have any item in common and you surely don't want that to happen. Each of the menu has 5 items (strings) in them. So, your task is to find out if there is any need to change the menu or let them be happy with their respective menu.
-
- 
 
 // Example 1:
 
@@ -86,30 +83,81 @@
 // Explanation:
 // "fish" is common in both the menu.
 
-function sameWord(arr, arr1){
-for(let i=0;i<arr.length;i++){
-    
-}
-}
+// function sameWord(arr, arr1){
+// for(let i=0;i<arr.length;i++){
+
+// }
+// }
 
 // ########################################  New que  ##########################################
 
 // find prime number less then given number
-
-function lesserPrimeNo(n){
+// 2 is only even prime number
 function isPrime(number) {
-    if (number < 2) {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i <= number / 2; i++) {
+    if (number % i === 0) {
       return false;
     }
-   for (let i = 2; i <= number / 2; i++) {
-      if (number % i === 0) {
-        return false;
-      }
-    }
-    return true;
   }
-  console.log(isPrime(6));
-  if(number==true || number==false){
-              
-  }
+  return true;
 }
+
+// function lesserPrimeNo(n) {
+//      for(let i=n-1;i>0;i--){
+//           if(isPrime(i)){
+//            return i;
+//           }
+//      }
+// }
+// console.log(lesserPrimeNo(13))
+function primeInRange(number){
+  let count=0;
+   for(let i=2;i<=number;i++){
+    if(isPrime(i)){
+      console.log(i);
+      count++
+    }
+   }
+   console.log(count)
+}
+primeInRange(100);
+
+// ########################################  New que  ##########################################
+
+// given a string consisting of a or b only
+// print the absolute differnce the count of frequencies of a and b
+// math.abs
+
+// let str = "abbabaabbaaaaaaa";
+// let arr = str.toString();
+// function frqDiff(arr) {
+//   let container = new Map();
+//   let i;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (container.has(arr[i])) {
+//       let oldFrq = container.get(arr[i]);
+//       let newFrq = oldFrq + 1;
+//       container.set(arr[i], newFrq);
+//     } else {
+//       container.set(arr[i], 1);
+//     }
+//   }
+
+//   let countA = container.get("a");
+//   let countB = container.get("b");
+//   let diff = Math.abs(countA - countB);
+//   return diff;
+// }
+// console.log(frqDiff(arr));
+
+
+
+
+// ########################################  New que  ##########################################
+
+
+
+
