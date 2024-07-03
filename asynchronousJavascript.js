@@ -1,4 +1,4 @@
-2// console.log('task1 done');
+// console.log('task1 done');
 
 // console.log('task2 done');
 
@@ -216,7 +216,7 @@ async function getData(req, res) {
     }
 }
 
-// getData();
+getData();
 
 try {
     console.log(x);

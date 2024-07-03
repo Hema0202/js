@@ -93,17 +93,17 @@
 
 // find prime number less then given number
 // 2 is only even prime number
-function isPrime(number) {
-  if (number < 2) {
-    return false;
-  }
-  for (let i = 2; i <= number / 2; i++) {
-    if (number % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isPrime(number) {
+//   if (number < 2) {
+//     return false;
+//   }
+//   for (let i = 2; i <= number / 2; i++) {
+//     if (number % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
 // function lesserPrimeNo(n) {
 //      for(let i=n-1;i>0;i--){
@@ -113,17 +113,17 @@ function isPrime(number) {
 //      }
 // }
 // console.log(lesserPrimeNo(13))
-function primeInRange(number){
-  let count=0;
-   for(let i=2;i<=number;i++){
-    if(isPrime(i)){
-      console.log(i);
-      count++
-    }
-   }
-   console.log(count)
-}
-primeInRange(100);
+// function primeInRange(number){
+//   let count=0;
+//    for(let i=2;i<=number;i++){
+//     if(isPrime(i)){
+//       console.log(i);
+//       count++
+//     }
+//    }
+//    console.log(count)
+// }
+// primeInRange(100);
 
 // ########################################  New que  ##########################################
 
@@ -153,11 +153,4 @@ primeInRange(100);
 // }
 // console.log(frqDiff(arr));
 
-
-
-
 // ########################################  New que  ##########################################
-
-
-
-
